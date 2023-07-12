@@ -24,3 +24,9 @@ CSS
 
 - What is the CSS box model?
 - Various CSS position properties and its differences.
+
+## Javascript coding
+
+- Implement Array.prototype functions: map, reduce, filter, sort.
+- Implement DOM APIs: document.getElementsByClassName, document.getElementsByTagName.debounce/throttle.
+- Implement Promise/Promise-related APIs: Promise, Promise.all, Promise.any.
