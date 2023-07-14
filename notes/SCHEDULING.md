@@ -9,3 +9,4 @@
 2.  DAY 2
     1.  Topics
     2.  Problems
+        1.  GreatFrontEnd- fromPairs
