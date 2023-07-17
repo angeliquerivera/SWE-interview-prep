@@ -32,14 +32,14 @@ export default function insertionSort(arr) {
     let nextNum = arr[i + 1];
 
     if (currNum >= nextNum) {
-      sortedArr.push(currNum)
-     } else {
-      sortedArr.push(nextNum)
-     }
+      sortedArr.push(currNum);
+    } else {
+      sortedArr.push(nextNum);
+    }
 
-  return sortedArr;
+    return sortedArr;
+  }
 }
-
 /**
  * COMPLEXITY
  * TIME   O()
@@ -49,10 +49,11 @@ export default function insertionSort(arr) {
 /**
  * TIME TAKEN
  *
- * READ             0
- * EXPLAIN          0
- * APPROACH         0
- * CODE [FAIL]      0
- * TEST             0
- * OPTIMIZE         0
+ * READ             00:00:14
+ * EXPLAIN          00:00:25
+ * APPROACH         00:04:59
+ * 1st CODE         00:02:31
+ * TEST             00:03:08
+ * 2nd CODE         00:18:00
+ *
  */
