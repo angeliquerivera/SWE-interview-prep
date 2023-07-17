@@ -4,16 +4,30 @@
 
 /**
  * EXPLAIN
- * This is the plain English explanation
+ * Create a function `fromPairs(pairs)` that takes the key-value pairs and returns a new object
+ * `fromPairs(pairs)` takes in array as param
+ * Obj is returned
  */
 
 /**
  * APPROACH
- * Use code terminology here to explain steps
+ * create variable to store empty object
+ * START LOOP
+ * grab current value
+ * reassign curr arr value to obj key
+ * reassign next value to obj value
+ * END LOOP
+ * return obj
  */
 
 export default function fromPairs(pairs) {
-  throw "Not implemented!";
+  let obj = {};
+  for (let i = 0; i < pairs.length; i++) {
+    let currKey = pairs[i];
+    let currValue = pairs[i + 1];
+    Object.assign(obj, { currKey, currValue });
+  }
+  return obj;
 }
 
 /**
@@ -25,10 +39,12 @@ export default function fromPairs(pairs) {
 /**
  * TIME TAKEN
  *
- * READ             0
- * EXPLAIN          0
- * APPROACH         0
- * CODE [FAIL]      0
- * TEST             0
+ * READ             00:00:20
+ * EXPLAIN          00:01:40
+ * 1st APPROACH     00:06:56
+ * CODE             00:05:13
+ * FIRST TEST       00:01:40
+ * 2nd APPROACH     00:06:21
+ * 2nd CODE [FAIL]  00:08:01
  * OPTIMIZE         0
  */
