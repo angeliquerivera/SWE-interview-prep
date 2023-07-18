@@ -23,10 +23,12 @@
 export default function fromPairs(pairs) {
   let obj = {};
   for (let i = 0; i < pairs.length; i++) {
-    let currKey = pairs[i];
-    let currValue = pairs[i + 1];
-    Object.assign(obj, { currKey, currValue });
+    let currKey = pairs[i][0];
+    let currValue = pairs[i][1];
+
+    obj[currKey] = currValue;
   }
+
   return obj;
 }
 
